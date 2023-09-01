@@ -1,0 +1,237 @@
+/* PRODUCT GALLERY PAGE ////////////////////////////////////////////////////////////////////////////*/
+/* Cinnamon roll images div box*/
+.photobox {
+    width: 400px;
+    height:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Cinnamon roll description */
+.photobox p {
+    line-height: 5px;
+}
+
+
+/* Cinnamon roll hover highlight */
+ .photobox:hover {
+    background-color: yellow;
+    border-top: 15px solid yellow;
+ }
+
+
+
+/* Cinnamon roll images */
+.roll {
+    width: 400px;
+    height:400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Logo image */
+#logo {
+    width: 400px;
+    height:400px;  
+}
+
+
+
+.hover-product-cart {
+    width: 80px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.hover-product-cart p:hover {
+    background-color: yellow;
+
+}
+
+
+.hover-product-cart p {
+    text-align: center;
+
+}
+
+section {
+    text-align: center;
+}
+
+
+
+/* PRODUCTS DETAIL PAGE ////////////////////////////////////////////////////////////////*/
+
+.product-detail-top h1 {
+    text-align: center;
+}
+
+.detailphotobox {
+    width: 600px;
+    height:630px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.customizeline {
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+
+#roll-detail-page {
+    width: 600px;
+    height:600px;
+}
+
+
+/* Drop down menu section */
+
+.glazing-menu {
+    width: 600px;
+    height:70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.pack-size-menu {
+    width: 600px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* Add to cart section */
+
+
+.cart-section {
+    width: 600px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.cart-section p, button {
+    display: inline-block;
+    margin: 12px;
+}
+
+
+.cart-section button {
+    background-color: yellow;
+    padding: 8px 15px;
+}
+
+/* SHOPPING CART PAGE //////////////////////////////////////////////////////*/
+
+.shoppinglogopart h1{
+ text-align: center;
+ 
+}
+
+.product-cart {
+text-align: center;
+margin-bottom: 50px
+}
+
+h2 {
+    text-align: center;
+}
+
+/* HR Lines */
+#hr-1 {
+    border-top: 2px solid black;
+
+}
+
+#hr-2 {
+    border-top: 3px solid black;
+
+}
+
+#hr-3 {
+    border-top: 3px solid black;
+    width: 70%;
+}
+
+
+
+
+.removebutton {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 30px
+   }
+
+
+
+.shoppingphotobox {
+    width: 200px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.shoppingroll {
+    width: 200px;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.shoppingphotobox p {
+    line-height: 2px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Price */
+.shoppingphotobox h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.checkout {
+    text-align: center;
+
+}
+
+
+.checkout button {
+    position: flex;
+    background-color: yellow;
+    padding: 10px 15px;
+}
