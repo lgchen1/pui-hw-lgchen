@@ -20,8 +20,12 @@
  .photobox:hover {
     background-color: yellow;
     border-top: 15px solid yellow;
+    
  }
 
+ .photobox:hover #product-name-4 {
+    font-weight:bold;
+ }
 
 
 /* Cinnamon roll images */
