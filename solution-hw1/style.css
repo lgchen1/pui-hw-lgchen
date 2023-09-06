@@ -9,18 +9,15 @@
 }
 
 
-
 /* Cinnamon roll description */
 .photobox p {
     line-height: 5px;
 }
 
-
 /* Cinnamon roll hover highlight */
  .photobox:hover {
     background-color: yellow;
-    border-top: 15px solid yellow;
-    
+    padding: 10px;
  }
 
  .photobox:hover .product-name-4 {
@@ -60,14 +57,12 @@
 
 
 .hover-product-cart p:hover {
-    background-color: yellow;
-    
+    background-color: yellow; 
 }
 
 
 .hover-product-cart p {
     text-align: center;
-
 }
 
 
@@ -214,6 +209,7 @@ margin-bottom: 50px
 
 #shop-cart-text {
     font-size: 30px;
+    text-align: center;
 }
 
 /* HR Lines */
@@ -282,7 +278,7 @@ margin-bottom: 50px
 
 
 .checkout button {
-    position: flex;
+    position: relative;
     background-color: yellow;
     padding: 10px 15px;
 }
