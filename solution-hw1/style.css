@@ -49,9 +49,11 @@
 .hover-product-cart {
     width: 80px;
     height: 100px;
+    font-weight:bold;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-size: 100%;
 
 }
 
@@ -59,7 +61,7 @@
 
 .hover-product-cart p:hover {
     background-color: yellow;
-
+    
 }
 
 
@@ -68,12 +70,26 @@
 
 }
 
+
 section {
     text-align: center;
 }
 
 
+/* Image border */
+#roll-detail-page {
+    border: 2px solid black;
+  }
 
+
+  .shoppingroll {
+    border: 2px solid black; 
+  }
+
+
+  .roll {
+    border: 2px solid black;
+  }
 /* PRODUCTS DETAIL PAGE ////////////////////////////////////////////////////////////////*/
 
 .product-detail-top h1 {
@@ -91,7 +107,7 @@ section {
 
 
 .customizeline {
-    width: 300px;
+    width: 180px;
     height: 100px;
     display: block;
     margin-left: auto;
@@ -110,24 +126,44 @@ section {
 /* Drop down menu section */
 
 .glazing-menu {
-    width: 600px;
+    width: 180px;
     height:70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
 }
 
+/* Drop down menu bar */
+.glazing-menu select {
+    width: 180px; 
+  }
+
+
+.pack-size-menu select {
+    width: 180px; 
+  }
+
+  /* /////////////////// */
+
+  
+#glaze-text {
+    text-align: left; 
+}
 
 .pack-size-menu {
-    width: 600px;
+    width: 180px;
     height:100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
 }
 
+
+#glaze-text {
+    text-align: left; 
+}
 
 /* Add to cart section */
 
@@ -165,8 +201,19 @@ text-align: center;
 margin-bottom: 50px
 }
 
-h2 {
+.roll-price {
+    margin-top: 35px;
     text-align: center;
+
+}
+
+#num-price {
+    font-size: 18px;
+}
+
+
+#shop-cart-text {
+    font-size: 30px;
 }
 
 /* HR Lines */
