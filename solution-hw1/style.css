@@ -23,7 +23,7 @@
     
  }
 
- .photobox:hover #product-name-4 {
+ .photobox:hover .product-name-4 {
     font-weight:bold;
  }
 
@@ -207,7 +207,7 @@ margin-bottom: 50px
 
 }
 
-#num-price {
+.num-price {
     font-size: 18px;
 }
 
