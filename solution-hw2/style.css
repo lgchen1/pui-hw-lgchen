@@ -1,0 +1,493 @@
+/* PRODUCT GALLERY PAGE ////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Top portion div box */
+.parent-top-portion {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+  
+}
+
+
+.hover-product-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 20px; 
+    display: inline-block;
+    margin-left: 450px;
+    margin: 10px 50px; 
+    
+}
+
+.hover-product-cart {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.hand-made-rolls {
+    font-size: 30px;
+    font-weight: 100px;
+    margin-right: 770px;
+    padding-top: 20px;
+}
+
+
+
+.original-roll {
+    font-size: 30px;
+    font-weight: 100px;
+    margin-right: 900px;
+}
+
+.hover-product-text{
+    text-align: right;
+    padding-right: 100px;
+}
+
+
+.product-detail-top {
+    display: flex; 
+    align-items: center;
+}
+
+
+.hand-made-rolls-text {
+    text-align: justify;
+   
+}
+
+
+.hr-1 {
+    margin-right: 20px;
+  }
+
+
+
+
+/* Cinnamon roll images div box*/
+.parent_roll_box {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 80px;
+margin-right: 300px;
+margin-left: 300px;
+align-content: space-between;
+justify-content: space-between;
+}
+
+
+.photobox {
+    display: block;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+
+#hr-1 {
+    width: 1180px;
+  }
+
+
+
+
+  /* //////////////////////////////// */
+
+/* Cinnamon roll description */
+.photobox p {
+    line-height: 5px;
+}
+
+/* Cinnamon roll hover highlight */
+ .photobox:hover {
+    background-color: yellow;
+    padding: 10px;
+ }
+
+ .photobox:hover .product-name-4 {
+    font-weight:bold;
+    
+ }
+
+
+/* Cinnamon roll images */
+.roll {
+    width: 285px;
+    height: 285px;
+    display: block;
+    
+}
+
+
+/* Logo image */
+#logo {
+    width: 400px;
+    height:400px;  
+}
+
+
+.hover-product-text p:hover {
+    background-color: yellow; 
+}
+
+
+.hover-product-cart p {
+    text-align: center;
+}
+
+
+/* Image border */
+#roll-detail-page {
+    border: 2px solid black;
+  }
+
+
+  .shoppingroll {
+    border: 2px solid black; 
+  }
+
+
+  .roll {
+    border: 2px solid black;
+  }
+/* PRODUCTS DETAIL PAGE ////////////////////////////////////////////////////////////////*/
+
+/* Top logo portion */
+
+.hand-made-rolls2 {
+    font-size: 30px;
+    font-weight: 100px;
+    margin-right: 770px;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+/* Parent div box */
+
+.parent-detail-box {
+    display: flex;
+    justify-content: center;
+    margin-right: 700px;
+    margin-left: 700px;
+    
+}
+
+.original-cinnamon-roll-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 400px;
+    margin-left: 400px;
+
+}
+
+
+
+
+.product-detail-top h1 {
+    text-align: center;
+}
+
+.detailphotobox {
+    width: 600px;
+    height:630px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+  .customizeline {  
+     width: 250px; 
+     height: 60px;
+     margin-left: 50px;
+     margin-top: 60px;
+     font-size: 120%;
+     padding-bottom: 100px
+  }
+ 
+
+
+#roll-detail-page {
+    width: 600px;
+    height:600px;
+}
+
+
+/* Drop down menu section */
+
+.text-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+.glazing-menu {
+    width: 180px;
+    height:70px;
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Drop down menu bar */
+.glazing-menu select {
+    width: 200px; 
+    border: 1px solid black;
+    padding: 5px; 
+  }
+
+
+.pack-size-menu select {
+    width: 200px; 
+    border: 1px solid black;
+    padding: 5px; 
+  }
+
+
+  
+
+  /* /////////////////// */
+
+  
+#glaze-text {
+    text-align: left; 
+}
+
+.pack-size-menu {
+    width: 180px;
+    height:100px;
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 10px;
+}
+
+
+#glaze-text {
+    text-align: left; 
+}
+
+/* Add to cart section */
+
+
+.cart-section {
+    width: 200px;
+    height:100px;
+    display: block;
+    margin-left: 50px;
+    text-align: center;
+}
+
+
+.cart-section p, button {
+    display: inline-block;
+    margin: 12px;
+    
+}
+
+
+.cart-section button {
+    background-color: yellow;
+    padding: 8px 15px;
+}
+
+/* SHOPPING CART PAGE //////////////////////////////////////////////////////*/
+
+
+/* Flex Divs */
+
+.original-roll-parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+
+
+.products-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.info-part {
+    display: flex;
+    width: 600px;
+    height: 200px; 
+    justify-content: center
+}
+
+
+/* Checkout section flex boxes */
+
+
+.total-price {
+    display: flex;
+    align-items: right;
+}
+
+.checkout {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+  }
+
+
+
+.total- {
+    margin-left: 350px;
+    padding-left: 240px;
+    
+
+  
+}
+
+.total-, .checkout-price {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* //////////////// */
+
+.checkout-bt {
+    margin-top: 10px;
+    align-items: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+.num-price {
+ width: -2000px; 
+ font-family: Arial, Helvetica, sans-serif; 
+font-size: 18px; 
+padding-top: 35px; 
+ padding-left: 275px; 
+}
+
+.roll-text {
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.shoppinglogopart h1{
+ text-align: center;
+ 
+}
+
+.product-cart {
+text-align: center;
+margin-bottom: 50px
+}
+
+.roll-price {
+    margin-top: 35px;
+    text-align: center;
+
+}
+
+.num-price {
+    font-size: 18px;
+}
+
+
+#shop-cart-text {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* HR Lines */
+#hr-1 {
+    border-top: 2px solid black;
+
+}
+
+
+#hr-3 {
+    border-top: 3px solid black;
+    width: 52%;
+    
+}
+
+
+
+
+.removebutton {
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+   }
+
+
+
+.shoppingphotobox {
+    padding-right: 50px;
+    padding-bottom: 50px;
+    align-content: right;
+    
+}
+
+
+
+
+
+
+.shoppingroll {
+    width: 200px;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.shoppingphotobox p {
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Price */
+.shoppingphotobox h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.checkout {
+    display: flex
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+
+.checkout button {
+    background-color: yellow;
+    padding: 10px 15px;
+}
+
+.checkout-bt {
+    margin-top: 10px;
+    align-self: flex-end;
+    padding-right: 385px;
+  }
+
+
+ 

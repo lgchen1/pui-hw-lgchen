@@ -17,7 +17,8 @@
 /* Cinnamon roll hover highlight */
  .photobox:hover {
     background-color: yellow;
-    padding: 10px;
+    padding: 50px;
+    display: block;
  }
 
  .photobox:hover .product-name-4 {
