@@ -1,10 +1,15 @@
 /* PRODUCT GALLERY PAGE ////////////////////////////////////////////////////////////////////////////*/
-
+.body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
 
 /* Top portion div box */
 .parent-top-portion {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     align-items: center;
   
 }
@@ -13,7 +18,7 @@
 .hover-product-text p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; 
-    font-size: 20px; 
+    font-size: 30px; 
     display: inline-block;
     margin-left: 450px;
     margin: 10px 50px; 
@@ -30,9 +35,9 @@
 }
 
 .hand-made-rolls {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 100px;
-    margin-right: 770px;
+    margin-right: 700px;
     padding-top: 20px;
 }
 
@@ -47,11 +52,13 @@
 .hover-product-text{
     text-align: right;
     padding-right: 100px;
+    padding-bottom: 20px;
 }
 
 
 .product-detail-top {
-    display: flex; 
+    padding-right: 50px;
+    padding-left: 60px;
     align-items: center;
 }
 
@@ -70,14 +77,21 @@
 
 
 /* Cinnamon roll images div box*/
+.index_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+padding-left: 100px;
+
+
+}
+
+
 .parent_roll_box {
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 80px;
-margin-right: 300px;
-margin-left: 300px;
-align-content: space-between;
 justify-content: space-between;
+
 }
 
 
@@ -86,14 +100,9 @@ justify-content: space-between;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin: 10px;
     
 }
-
-
-#hr-1 {
-    width: 1180px;
-  }
-
 
 
 
@@ -131,9 +140,13 @@ justify-content: space-between;
     height:400px;  
 }
 
+.hover-product-text {
+    border-bottom: 4px solid black;
+}
 
 .hover-product-text p:hover {
     background-color: yellow; 
+
 }
 
 
@@ -160,22 +173,31 @@ justify-content: space-between;
 
 /* Top logo portion */
 
-.hand-made-rolls2 {
-    font-size: 30px;
+.hand-made-rolls{
+    padding-top: 50px; 
+    width:100%;
+}
+
+.hand-made-rolls > p{
+    margin:0px;
+    text-align: left;
+}
+
+/* .hand-made-rolls2
+    font-size: 35px;
     font-weight: 100px;
-    margin-right: 770px;
+    margin-right: 700px;
     padding-top: 50px;
     padding-right: 100px;
 }
 
 /* Parent div box */
 
-.parent-detail-box {
+.parent-container {
     display: flex;
     justify-content: center;
-    margin-right: 700px;
-    margin-left: 700px;
-    
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .original-cinnamon-roll-text {
@@ -193,23 +215,18 @@ justify-content: space-between;
 }
 
 .detailphotobox {
-    width: 600px;
-    height:630px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    padding-left: 300px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 
   .customizeline {  
-     width: 250px; 
+     width: 307px; 
      height: 60px;
      margin-left: 50px;
      margin-top: 60px;
-     font-size: 120%;
+     font-size: 150%;
      padding-bottom: 100px
   }
  
@@ -223,11 +240,11 @@ justify-content: space-between;
 
 /* Drop down menu section */
 
-.text-menu {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+/* .text-menu { */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: 18px; */
 
-}
+/* } */
 
 .glazing-menu {
     width: 180px;
@@ -236,21 +253,26 @@ justify-content: space-between;
     margin-left: 50px;
     margin-right: auto;
     text-align: left;
+
 }
+
 
 /* Drop down menu bar */
 .glazing-menu select {
-    width: 200px; 
-    border: 1px solid black;
+    width: 300px; 
+    border: 2px solid black;
     padding: 5px; 
+    
   }
 
 
 .pack-size-menu select {
-    width: 200px; 
-    border: 1px solid black;
+    width: 300px; 
+    border: 2px solid black;
     padding: 5px; 
   }
+
+
 
 
   
@@ -286,13 +308,15 @@ justify-content: space-between;
     display: block;
     margin-left: 50px;
     text-align: center;
-    padding-top: 500px;
+    padding-top: 44px;
+    padding-left:110px;
 }
 
 
 .cart-section p, button {
     display: inline-block;
     margin: 12px;
+    font-weight: bold;
     
 }
 
@@ -300,17 +324,30 @@ justify-content: space-between;
 .cart-section button {
     background-color: yellow;
     padding: 8px 15px;
+    
 }
+
+
+
 
 /* SHOPPING CART PAGE //////////////////////////////////////////////////////*/
 
 
 /* Flex Divs */
 
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: right;
+    
+
+    
+}
 .original-roll-parent {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: flex-end;
+    
+  
 }
 
 
@@ -335,28 +372,16 @@ justify-content: space-between;
 
 .total-price {
     display: flex;
-    align-items: right;
-}
-
-.checkout {
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-end; 
-  }
-
-
-
-.total- {
-    margin-left: 470px;
-    padding-left: 275px;
-    
-
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
   
 }
 
+
 .total-, .checkout-price {
-    display: flex;
-    width: 600px;
+ 
+    width: 570px;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -364,12 +389,20 @@ justify-content: space-between;
 
 /* //////////////// */
 
-.checkout-bt {
+.checkout-bt button {
     margin-top: 10px;
     align-items: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin-left: 1055px;
+    background-color: yellow;
+    padding: 8px 15px;
+        
 
+}
+
+.checkout-bt {
+    padding-left: 15px;
 }
 
 .num-price {
@@ -421,7 +454,9 @@ margin-bottom: 50px
 
 #hr-3 {
     border-top: 3px solid black;
-    width: 52%;
+    width: 74%;
+    margin-left: 306px;
+    
     
 }
 
@@ -441,8 +476,8 @@ margin-bottom: 50px
 
 .shoppingphotobox {
     padding-right: 50px;
-    padding-bottom: 50px;
-    align-content: right;
+    padding-bottom: 24px;
+    align-content: center;
     
 }
 
@@ -472,23 +507,21 @@ margin-bottom: 50px
 }
 
 .checkout {
-    display: flex
+    display: flex;
     flex-direction: column;
-    text-align: left;
     align-items: flex-start;
+    width: fit-content;
+    padding-left: 45px;
 }
 
 
 .checkout button {
     background-color: yellow;
     padding: 10px 15px;
+    
 }
 
-.checkout-bt {
-    margin-top: 10px;
-    align-self: flex-end;
-    padding-right: 385px;
-  }
+
 
 
  
