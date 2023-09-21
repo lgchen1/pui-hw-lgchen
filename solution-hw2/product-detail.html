@@ -7,6 +7,7 @@
  <link href="./style.css" rel="stylesheet" type="text/css">
  <title>Product Detail page</title>
 
+ <script type="text/javascript" src="random-element.js"></script>
 
 </head>
 
@@ -111,41 +112,72 @@
   <!-- <div class="lower-container">
   
 
-  <!-- DROP DOWN MENU -->
-    <!-- <div class="glazing-menu">
-      <label id="glaze-text">Glazing:</label>
-      <div>
-        <select>
-          <option value="keep-original">Keep original</option>
-          <option value="sugar-milk">Sugar milk</option>
-          <option value="vanilla-milk">Vanilla milk</option>
-          <option value="double-chocolate">Double chocolate</option>
-        </select>
-      </div>
-    </div> -->
+  <script>
+<div class="glazing-menu">
+    <label id="glaze-text">Glazing:</label>
+    <div>
+        <select id="glazing-select"></select>
+    </div>
+</div>
 
+<div class="pack-size-menu">
+    <label>Pack size:</label>
+    <div>
+        <select id="pack-size-select"></select>
+    </div>
+</div>
 
-  <!-- PACK SIZE MENU -->
-  <!-- <div class="pack-size-menu">
-      <label>Pack size:</label>  
-          <select>
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
-          </select>
-  </div> -->
-
-
-    <!-- ADD TO CART -->
-<!-- 
-  <div class="cart-section">
-    <p>$2.49</p>   
+<div class="cart-section">
+    <p id="cart-price">$2.49</p>
     <button>Add to Cart</button>
-  </div>
+</div>
+
+<script>
+    const priceOptions = {
+        "keep-original": 2.49,
+        "sugar-milk": 2.99,
+        "vanilla-milk": 3.49,
+        "double-chocolate": 3.99,
+    };
+
+    const glazingSelect = document.getElementById("glazing-select");
+    const packSizeSelect = document.getElementById("pack-size-select");
+    const cartPrice = document.getElementById("cart-price");
+
+    // Function to populate select options using a loop
+    function populateSelectOptions(selectElement, options) {
+        for (const optionKey in options) {
+            if (options.hasOwnProperty(optionKey)) {
+                const option = document.createElement("option");
+                option.value = optionKey;
+                option.textContent = optionKey;
+                selectElement.appendChild(option);
+            }
+        }
+    }
+
+    // Function to update cart price
+    function updateCartPrice() {
+        const selectedGlazing = glazingSelect.value;
+        const selectedPackSize = packSizeSelect.value;
+        const price = priceOptions[selectedGlazing] * selectedPackSize;
+        cartPrice.textContent = `$${price.toFixed(2)}`;
+    }
+
+    // Event listeners for select elements
+    glazingSelect.addEventListener("change", updateCartPrice);
+    packSizeSelect.addEventListener("change", updateCartPrice);
+
+    // Populate the select options using the loop
+    populateSelectOptions(glazingSelect, priceOptions);
+    populateSelectOptions(packSizeSelect, { 1: 1, 3: 3, 6: 6, 12: 12 });
+
+    // Initial update based on the default selected options
+    updateCartPrice();
+</script>
 
 
-</div> -->
+  </script>
 
 
 
