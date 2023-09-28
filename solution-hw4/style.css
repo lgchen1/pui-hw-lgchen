@@ -7,6 +7,29 @@
 }
 
 
+/* Links color */
+a:link {
+  color: black;
+}
+
+
+a:visited {
+    color: black;
+}
+
+
+a:link product-name-4 {
+    color: black;
+    text-decoration: underline;
+  }
+
+
+a:visited product-name-4 {
+    color: black;
+    text-decoration: underline;
+  }
+
+
 
 /* Top portion div box */
 .parent-top-portion {
