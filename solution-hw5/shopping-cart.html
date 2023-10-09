@@ -7,6 +7,9 @@
  <link href="./style.css" rel="stylesheet" type="text/css">
  <title>Shopping Cart</title>
 
+
+<script defer src="shop-Cart.js" type="text/javascript"></script>
+
 </head>
 
   
@@ -43,88 +46,46 @@
 
 <!-- ORIGINAL -->
 
-<!-- parent div -->
-<div class="container">
+
+<template class="cart-template">
+
     <div class="original-roll-parent"> 
 
-
-
-    <div class="shoppingphotobox">
-        <img src="../assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="shoppingroll">
-
-        <p class="removebutton">Remove</p>
-    </div>
-
-
-    <div class="info-part">
-
-
-    <div class="roll-text">
-         <p>Original Cinnamon Roll</p>
-        <p>Glazing: Keep original</p>
-        <p>Pack Size: 1</p>
-    </div>
-
-    <div class="num-price">
-        <p>$2.49</p>
-    </div>
-
-</div>
-
-
-
-
-</div>
-
-
-
-<!-- DOUBLE CHOCO -->
-
-<!-- parent div -->
-<div class="original-roll-parent"> 
-
-
-
         <div class="shoppingphotobox">
-        <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double chocolate cinnamon roll" class="shoppingroll">
-        
-        <p class="removebutton">Remove</p>
+            <img src="../assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="shoppingroll">
+            <p class="removebutton">Remove</p>
         </div>
-        
-    
-    <div class="info-part">
-        <div class="roll-text">
-            <p>Double Chocolate Cinnamon Roll</p>
-            <p>Glazing: Sugar milk</p>
-            <p>Pack Size: 6</p>
-        </div>
-        
+
+
+        <div class="info-part">
+            <div class="roll-text">
+                <p>Original Cinnamon Roll</p>
+                <p>Glazing: Keep original</p>
+                <p>Pack Size: 1</p>
+            </div>
 
         <div class="num-price">
-            <p>$27.45</p>  
+            <p>$2.49</p>
         </div>
+
     </div>
-        
-        </div>
+
+</template>
+
+
 
     
-    <hr id="hr-3">
+<hr id="hr-3">
     
-
-
-
     <!-- CHECKOUT //////////////////////////////-->
 
 
-
-    
-
-</div>
+<!-- </div> -->
 
 <div class="checkout">
 
 
-        <div class="total-price">
+    <div class="total-price">
     
     
         <div class="total-">
@@ -137,20 +98,14 @@
         </div>
     
         
-        </div>
-    
-    
-    
-    
-       
-    
-    
     </div>
-
-
-
+    
+    
     <div class="checkout-bt">
             <button>Checkout</button>
     </div>
+
+</div>
+
 
 </body>
