@@ -52,28 +52,7 @@ function updateRoll(roll){
 
     updateTotalPrice(roll);
 }
-///////////////////////////////////////////////////// will need to call updateRoll after createRoll
-// function displayCartItem(roll) {
-//     const template = document.querySelector(".cart-template");
-//     // const clone = template.content.cloneNode(true);
 
-//     // roll.element = clone.querySelector('.original-roll-parent')
-
-//     const cartContainer = document.querySelector(".checkout");
-  
-//     const clone = document.importNode(template.content, true);
-  
-    // Populate the template with roll information
-//     clone.querySelector(".shoppingroll").src = `../assets/products/${roll.type.toLowerCase()}-cinnamon-roll.jpg`;
-//     clone.querySelector(".removebutton").addEventListener("click", () => removeItemFromCart(roll));
-//     clone.querySelector(".roll-text p:nth-child(1)").textContent = roll.type + " Cinnamon Roll";
-//     clone.querySelector(".roll-text p:nth-child(2)").textContent = "Glazing: " + roll.glazing;
-//     clone.querySelector(".roll-text p:nth-child(3)").textContent = "Pack Size: " + roll.size;
-//     console.log(calculatePrice(roll).toFixed(2));
-//     clone.querySelector(".num-price p").textContent = "$" + calculatePrice(roll).toFixed(2);
-//     template.appendChild(clone);
-//     saveToLocalStorage()
-//   }
   
 function displayCartItems() {
     for (const roll of cart) {
@@ -82,9 +61,8 @@ function displayCartItems() {
     updateTotalPrice();    
 }
 
-  // Remove items from the cart and update the total price
 
-///////////////////////////////////   after updateRoll make removeItem and have the saveToLocalStorge
+
 
   function removeItem(roll){
       roll.element.remove();
@@ -96,22 +74,7 @@ function displayCartItems() {
 
       saveToLocalStorage();
   }
-// function removeItemFromCart(roll) {
-//     const rollIndex = cart.indexOf(roll);
-//     if (rollIndex !== -1) {
-//         cart.splice(rollIndex, 1);
-//     }
-  
-//     // Remove the corresponding DOM element
-//     const cartItems = document.querySelectorAll(".template, .original-roll-parent");
-//     for (const item of cartItems) {
-//         if (item.querySelector(".roll-text p:nth-child(1)").textContent.startsWith(roll.type)) {
-//             item.remove();
-//         }
-//     }
-//     updateTotalPrice();
-//     saveToLocalStorage();
-//   }
+
   
   function updateTotalPrice() {
     const totalPriceElement = document.querySelector(".checkout-price p");
@@ -142,13 +105,6 @@ const rollType = params.get('roll');
 let cart = [];
 retrieveFromLocalStorage();
 
-// Create Roll instances and add them to the cart
-// const originalRoll = new Roll("Original", "Keep Original", 1, 2.49);
-// const walnutRoll = new Roll("Walnut", "Vanilla Milk", 12, 39.90);
-// const raisinRoll = new Roll("Raisin", "Sugar Milk", 3, 8.97);
-// const appleRoll = new Roll("Apple", "Original", 3, 10.47);
-
-// cart.push(originalRoll, walnutRoll, raisinRoll, appleRoll);
 
 
 const addToCartButton = document.getElementById('add-to-cart-button');
