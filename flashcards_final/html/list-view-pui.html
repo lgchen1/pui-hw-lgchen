@@ -12,7 +12,7 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/list-view-style.css">
   <title>Flashcards</title>
 </head>
 <body>
@@ -41,11 +41,11 @@
       <div class="container">
         <div id="header" class="topnav_flex">
           <div>
-            <a href="study-set.html"><img alt="back arrow" src="images/list-view/Vector.png"></a>
+            <a href="study-set.html"><img alt="back arrow" src="../images/list-view/Vector.png"></a>
           </div>
           <div>
-            <button id="show_card_box"><img alt="plus icon in a green circle" src="images/list-view/add.png"></button>
-            <a href="list-view-pui.html"><img alt="list view icon" src="images/flashcards/server.png"></a>
+            <button id="show_card_box"><img alt="plus icon in a green circle" src="../images/list-view/add.png"></button>
+            <a href="flashcard-pui.html"><img alt="flash card view icon" src="../images/list-view/copy.png"></a>
             <button id="delete_cards"></button>
           </div>
         </div>
@@ -53,10 +53,10 @@
     </header>
 
     <div class="set_header">
-      <h1>New study set</h1>
+      <h1>PUI</h1>
     </div>
 
-    <div class="tracker" style="display:none">
+    <div class="tracker">
       <div class="learned_tracker">
         <h2 class="learned_tracker-count" id="learn_count">0 items learned</h2>
       </div>
@@ -73,6 +73,6 @@
 
   </main>
   <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
-  <!-- <script src="script.js"></script> -->
+  <script src="../js/script-list.js"></script>
 </body>
 </html>

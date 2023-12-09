@@ -12,8 +12,8 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" href="list-view-style.css">
-  <link rel="stylesheet" href="study-set.css">
+  <link rel="stylesheet" href="../css/list-view-style.css">
+  <link rel="stylesheet" href="../css/study-set.css">
   <title>Flashcards</title>
 </head>
 <body>
@@ -29,14 +29,14 @@
           <label for="set_icon" maxlength="280">Select an image</label>
           <div class="set_images">
             <div>
-              <img id="bear" alt="light brown teddy bear with bow tie in a pink background" onclick="getSource(this.src)" src="images/icons/bear.png">
-              <img id="cat" alt="yellow cat winking with blue background" onclick="getSource(this.src)" src="images/icons/cat.png">
-              <img id="chick" alt="yellow chicken with glasses eating leaves on a green background" onclick="getSource(this.src)" src="images/icons/chick.png">
+              <img id="bear" alt="light brown teddy bear with bow tie in a pink background" onclick="getSource(this.src)" src="../images/icons/bear.png">
+              <img id="cat" alt="yellow cat winking with blue background" onclick="getSource(this.src)" src="../images/icons/cat.png">
+              <img id="chick" alt="yellow chicken with glasses eating leaves on a green background" onclick="getSource(this.src)" src="../images/icons/chick.png">
             </div>
             <div>
-              <img id="frog" alt="green frog with a yellow flower on its nose wearing a flower necklace on a yellow background" onclick="getSource(this.src)" src="images/icons/frog.png">
-              <img id="husky" alt="husky with glasses and red collar on baby blue background" onclick="getSource(this.src)" src="images/icons/husky.png">
-              <img id="otter" alt="brown otter blowing bubbles surrounded by seaweed in a turquoise background" onclick="getSource(this.src)" src="images/icons/otter.png">
+              <img id="frog" alt="green frog with a yellow flower on its nose wearing a flower necklace on a yellow background" onclick="getSource(this.src)" src="../images/icons/frog.png">
+              <img id="husky" alt="husky with glasses and red collar on baby blue background" onclick="getSource(this.src)" src="../images/icons/husky.png">
+              <img id="otter" alt="brown otter blowing bubbles surrounded by seaweed in a turquoise background" onclick="getSource(this.src)" src="../images/icons/otter.png">
             </div>
           </div>
           <!-- <label for="input_file" id="drop_area">
@@ -63,10 +63,10 @@
           <label for="set_icon" maxlength="280">Select a platform to share to</label>
           <div class="set_images">
             <div>
-              <img alt="facebook" src="images/facebook.png">
-              <img alt="instagram" src="images/instagram.png">
-              <img alt="slack" src="images/slack.png">
-              <img alt="whatsapp" src="images/whatsapp.png">
+              <img alt="facebook" src="../images/social-media/facebook.png">
+              <img alt="instagram" src="../images/social-media/instagram.png">
+              <img alt="slack" src="../images/social-media/slack.png">
+              <img alt="whatsapp" src="../images/social-media/whatsapp.png">
             </div>
           </div>
           <p class="copy_link">Copy link</p>
@@ -81,11 +81,11 @@
       <div class="container">
         <div id="header" class="topnav_flex">
           <div>
-            <a href="landing-page.html"><img alt="back arrow" src="images/list-view/Vector.png"></a>
+            <a href="landing-page.html"><img alt="back arrow" src="../images/list-view/Vector.png"></a>
           </div>
           <div>
-            <button id="show_card_box"><img alt="plus icon in a green circle" src="images/list-view/add.png"></button>
-            <button id="show_share"><img alt="external link icon" src="images/study-set/external-link.png"></button>
+            <button id="show_card_box"><img alt="plus icon in a green circle" src="../images/list-view/add.png"></button>
+            <button id="show_share"><img alt="external link icon" src="../images/study-set/external-link.png"></button>
             <button id="delete_cards"></button>
           </div>
         </div>
@@ -108,14 +108,14 @@
     <section>
       <div class="container">
         <div id="flashcards">
-          <div class="flashcardTile default_card"><a href="flashcard-pui.html"><div class="flashcard"><h2>PUI</h2><img class="selectedIcon" src="images/icons/cat.png" alt="yellow cat winking with blue background"><p class="fas fa-minus"></p></div></a></div>
-          <div class="flashcardTile default_card"><a href="flashcard-ucre.html"><div class="flashcard"><h2>UCRE</h2><img class="selectedIcon" src="images/icons/husky.png" alt="husky with glasses and red collar with baby blue background"><p class="fas fa-minus"></p></div></a></div>
+          <div class="flashcardTile default_card"><a href="flashcard-pui.html"><div class="flashcard"><h2>PUI</h2><img class="selectedIcon" src="../images/icons/cat.png" alt="yellow cat winking with blue background"><p class="fas fa-minus"></p></div></a></div>
+          <div class="flashcardTile default_card"><a href="flashcard-ucre.html"><div class="flashcard"><h2>UCRE</h2><img class="selectedIcon" src="../images/icons/husky.png" alt="husky with glasses and red collar with baby blue background"><p class="fas fa-minus"></p></div></a></div>
         </div>
       </div>
     </section>
 
   </main>
   <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
-  <script src="study-set.js"></script>
+  <script src="../js/study-set.js"></script>
 </body>
 </html>

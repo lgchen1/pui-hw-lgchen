@@ -261,7 +261,7 @@ button:hover{
   position: absolute;
   /* color: #1a1a1a; */
   transition: 0.3s ease-out;
-  background-image: url("images/list-view/trash-2.png");
+  background-image: url("../images/list-view/trash-2.png");
   background-repeat: no-repeat;
   height: 20px;
   width: 20px;

@@ -1,4 +1,4 @@
-var contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+var contentArray = localStorage.getItem('ucres') ? JSON.parse(localStorage.getItem('ucres')) : [];
 
 
 document.getElementById("save_card").addEventListener("click", () => {
@@ -49,7 +49,7 @@ flashcardMaker = (text, delThisIndex) => {
   hintContain.classList.add("hint_contain");
 
   hintImage.classList.add("hint_image");
-  hintImage.setAttribute("src", "images/hint-button.png");
+  hintImage.setAttribute("src", "../images/social-media/hint-button.png");
 
   hint.classList.add("hint");
   hint.textContent = "Hint: " + text.my_answer.substring(text.my_answer.length/2);
@@ -68,7 +68,7 @@ flashcardMaker = (text, delThisIndex) => {
   del.className = "fas fa-minus";
   del.addEventListener("click", () => {
     contentArray.splice(delThisIndex, 1);
-    localStorage.setItem('items', JSON.stringify(contentArray));
+    localStorage.setItem('ucres', JSON.stringify(contentArray));
     window.location.reload();
   })
 
@@ -118,7 +118,7 @@ addFlashcard = () => {
   }
 
   contentArray.push(flashcard_info);
-  localStorage.setItem('items', JSON.stringify(contentArray));
+  localStorage.setItem('ucres', JSON.stringify(contentArray));
   flashcardMaker(contentArray[contentArray.length - 1], contentArray.length - 1);
   question.value = "";
   answer.value = "";

@@ -75,7 +75,7 @@ button:hover{
 .set_header {
   text-align: center;
   color: #FFE3A7;
-  -webkit-text-stroke-color: #307537;
+  -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 5px;
   font-size: 3em;
 }
@@ -249,7 +249,7 @@ button:hover{
   position: absolute;
   /* color: #1a1a1a; */
   transition: 0.3s ease-out;
-  background-image: url("images/list-view/trash-2.png");
+  background-image: url("../images/list-view/trash-2.png");
   background-repeat: no-repeat;
   height: 20px;
   width: 20px;
