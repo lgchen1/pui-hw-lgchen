@@ -1,0 +1,32 @@
+.flashcard {
+    height: 350px;
+    width: 250px;
+    text-align: center;
+}
+
+.flashcardTile {
+    width: unset;
+}
+
+#flashcards {
+    justify-content: space-evenly;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.default_card h2 {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.set_images img:hover {
+    border: 5px solid #307537;
+}
+
+.keep_cover {
+    border: 5px solid #307537;
+}

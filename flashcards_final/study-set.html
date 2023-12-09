@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="list-view-style.css">
+  <link rel="stylesheet" href="study-set.css">
+  <title>Flashcards</title>
+</head>
+<body>
+
+  <main>
+    <section id="shadow">
+      <div class="container">
+        <div id="create_card">
+          <h2>Add new set</h2>
+          <label for="question">Title</label>
+          <textarea rows="1" id="question" maxlength="280"></textarea>
+          <div class="divider"></div>
+          <label for="set_icon" maxlength="280">Select an image</label>
+          <div class="set_images">
+            <div>
+              <img id="bear" alt="light brown teddy bear with bow tie in a pink background" onclick="getSource(this.src)" src="images/icons/bear.png">
+              <img id="cat" alt="yellow cat winking with blue background" onclick="getSource(this.src)" src="images/icons/cat.png">
+              <img id="chick" alt="yellow chicken with glasses eating leaves on a green background" onclick="getSource(this.src)" src="images/icons/chick.png">
+            </div>
+            <div>
+              <img id="frog" alt="green frog with a yellow flower on its nose wearing a flower necklace on a yellow background" onclick="getSource(this.src)" src="images/icons/frog.png">
+              <img id="husky" alt="husky with glasses and red collar on baby blue background" onclick="getSource(this.src)" src="images/icons/husky.png">
+              <img id="otter" alt="brown otter blowing bubbles surrounded by seaweed in a turquoise background" onclick="getSource(this.src)" src="images/icons/otter.png">
+            </div>
+          </div>
+          <!-- <label for="input_file" id="drop_area">
+            <input type="file" accept="image/*" id="input_file">
+          </label> -->
+          <div class="button_space">
+            <button id="save_card">Save</button><button id="close_card_box">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--EXTERNAL LINK-->
+    <section id="shadow_share">
+      <div class="container">
+        <div id="share_card">
+          <!-- <h2>Add new set</h2> -->
+          <label for="question">Select a study set</label>
+          <select class="selector">
+            <option value="volvo">PUI</option>
+            <option value="volvo">UCRE</option>
+          </select>
+          <div class="divider"></div>
+          <label for="set_icon" maxlength="280">Select a platform to share to</label>
+          <div class="set_images">
+            <div>
+              <img alt="facebook" src="images/facebook.png">
+              <img alt="instagram" src="images/instagram.png">
+              <img alt="slack" src="images/slack.png">
+              <img alt="whatsapp" src="images/whatsapp.png">
+            </div>
+          </div>
+          <p class="copy_link">Copy link</p>
+          <div class="button_space">
+            <button id="save_card">Share</button><button id="close_share_box">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <header>
+      <div class="container">
+        <div id="header" class="topnav_flex">
+          <div>
+            <a href="landing-page.html"><img alt="back arrow" src="images/list-view/Vector.png"></a>
+          </div>
+          <div>
+            <button id="show_card_box"><img alt="plus icon in a green circle" src="images/list-view/add.png"></button>
+            <button id="show_share"><img alt="external link icon" src="images/study-set/external-link.png"></button>
+            <button id="delete_cards"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="set_header">
+      <h1>Study sets</h1>
+    </div>
+
+    <div class="tracker" style="display:none">
+      <div class="learned_tracker">
+        <h2 class="learned_tracker-count" id="learn_count">0 items learned</h2>
+      </div>
+      <div class="quantity_tracker">
+        <h2 class="quantity_tracker-count" id="quantity_count">0 items</h2>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div id="flashcards">
+          <div class="flashcardTile default_card"><a href="flashcard-pui.html"><div class="flashcard"><h2>PUI</h2><img class="selectedIcon" src="images/icons/cat.png" alt="yellow cat winking with blue background"><p class="fas fa-minus"></p></div></a></div>
+          <div class="flashcardTile default_card"><a href="flashcard-ucre.html"><div class="flashcard"><h2>UCRE</h2><img class="selectedIcon" src="images/icons/husky.png" alt="husky with glasses and red collar with baby blue background"><p class="fas fa-minus"></p></div></a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
+  <script src="study-set.js"></script>
+</body>
+</html>

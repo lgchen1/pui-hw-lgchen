@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  background: #A8E1A8;
+}
+
+.ppl-learning {
+  width: 50%;
+}
+
+.btn-padding {
+  margin-bottom: 7em;
+}
+
+.image_position {
+  position: relative;
+}
+
+.btn-padding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+.start-learning-button {
+  background-color: #C18AED;
+  color: white;
+  border: unset;
+  padding: .5em 1em;
+  font-size: 2em;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.landing_page-container {
+  text-align: center;
+  margin-top: 15vh !important;
+}
+
+.quizcraze_header {
+  margin-bottom: unset;
+  margin-top: .5em;
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background: whitesmoke;
+  border: unset;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  height: 20px;
+  width: 100%;
+}
+
+#shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: none;
+  z-index: 1000;
+}
+
+#shadow_share {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: none ;
+  z-index: 1000;
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+  background: #A8E1A8;
+  margin-top: 50px;
+}
+
+.topnav_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#delete_cards {
+  padding: unset;
+}
+
+#header button{
+  font-family: inherit;
+  /* border: 1px solid red; */
+  background-color: unset;
+}
+
+.set_header {
+  text-align: center;
+  color: #FFE3A7;
+  -webkit-text-stroke-color: #307537;
+  -webkit-text-stroke-width: 5px;
+  font-size: 3em;
+}
+
+#create_card, #share_card {
+  display: none;
+  width: 370px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 100px;
+  background: #DBFFDB;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#share_card{
+  display: none;
+  width: 370px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 100px;
+  background: #DBFFDB;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#create_card h2{
+  color: black;
+  text-align: center;
+}
+
+#create_card textarea{
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid lightgray;
+  resize: none;
+  margin-top: 10px;
+}
+
+#create_card button{
+  width: fit-content;
+  font-size: 1em;
+  padding: .5em 2em;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+#close_card_box {
+  background-color: white;
+  color: #C18AED;
+  border: 1px solid #C18AED;
+}
+
+#flashcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.button_space {
+  margin-top: 25px;
+}
+
+.flashcard{
+  width: 370px;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 10px; 
+  background:#fff;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #C18AED;
+  transition: 0.1s ease-in-out;
+}
+
+.flashcard:hover {
+  transform: scale(1.03);
+}
+
+.flashcardTile {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tracker {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 75px;
+}
+
+#drop_area {
+  border: 10px solid white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#save_card {
+  background: #C18AED;
+  color: white;
+}
+
+.flashcard h2{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.flipped {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.fa-minus{
+  top: 3%;
+  right: 2%;
+  position: absolute;
+  /* color: #1a1a1a; */
+  transition: 0.3s ease-out;
+  background-image: url("images/list-view/trash-2.png");
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  z-index: 200;
+  color: rgba(0, 0, 0, .00005);
+}
+
+.hint_contain {
+  background-color: white;
+  display: inline-block;
+  padding: .5em 1.5em;
+  border-radius: 5px;
+}
+
+.hint {
+  display: none;
+}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
+
+@media(max-width:768px){
+  .flashcard{margin: auto;}
+
+  .flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:480px){
+  #header{
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #create_card{width: 95%;}
+
+  .flashcard{width: 100%;}
+
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Flashcards</title>
+</head>
+<body>
+
+  <main>
+    <section id="shadow">
+      <div class="container">
+        <div id="create_card">
+          <h2>Add card</h2>
+          <label for="question">Question</label>
+          <textarea rows="5" id="question" maxlength="280"></textarea>
+          <div class="divider"></div>
+          <label for="answer" maxlength="280">Answer</label>
+          <textarea rows="5" id="answer"></textarea>
+          <!-- <label for="input_file" id="drop_area">
+            <input type="file" accept="image/*" id="input_file">
+          </label> -->
+          <div class="button_space">
+            <button id="save_card">Save</button><button id="close_card_box">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <header>
+      <div class="container">
+        <div id="header" class="topnav_flex">
+          <div>
+            <a href="study-set.html"><img alt="back arrow" src="images/list-view/Vector.png"></a>
+          </div>
+          <div>
+            <button id="show_card_box"><img alt="plus icon in a green circle" src="images/list-view/add.png"></button>
+            <a href="list-view-ucre.html"><img alt="list view icon" src="images/flashcards/server.png"></a>
+            <button id="delete_cards"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="set_header">
+      <h1>UCRE</h1>
+    </div>
+
+    <div class="tracker" style="display:none">
+      <div class="learned_tracker">
+        <h2 class="learned_tracker-count" id="learn_count">0 items learned</h2>
+      </div>
+      <div class="quantity_tracker">
+        <h2 class="quantity_tracker-count" id="quantity_count">0 items</h2>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div id="flashcards"></div>
+      </div>
+    </section>
+
+  </main>
+  <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
+  <script src="script-ucre.js"></script>
+</body>
+</html>
