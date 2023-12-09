@@ -24,11 +24,11 @@ document.getElementById("save_card").addEventListener("click", () => {
   document.getElementById("create_card").style.display = "none";
 });
 
-document.getElementById("delete_cards").addEventListener("click", () => {
-  localStorage.clear();
-  flashcards.innerHTML = '';
-  contentArray = [];
-});
+// document.getElementById("delete_cards").addEventListener("click", () => {
+//   localStorage.clear();
+//   flashcards.innerHTML = '';
+//   contentArray = [];
+// });
 
 document.getElementById("show_card_box").addEventListener("click", () => {
   document.getElementById("shadow").style.display = "block";
