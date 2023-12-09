@@ -23,11 +23,11 @@ document.getElementById("close_share_box").addEventListener("click", () => {
   document.getElementById("share_card").style.display = "none";
 });
 
-document.getElementById("delete_cards").addEventListener("click", () => {
-  localStorage.clear();
-  flashcards.innerHTML = '';
-  contentArray = [];
-});
+// document.getElementById("delete_cards").addEventListener("click", () => {
+//   localStorage.clear();
+//   flashcards.innerHTML = '';
+//   contentArray = [];
+// });
 
 getSource = (source) => {
   selectedIcon = source;
