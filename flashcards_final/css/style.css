@@ -129,9 +129,9 @@ button:hover{
 
 .set_header {
   text-align: center;
-  color: #FFE3A7;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 5px;
+  color: black;
+  /* -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 5px; */
   font-size: 3em;
 }
 
